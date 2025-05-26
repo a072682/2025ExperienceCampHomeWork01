@@ -1,0 +1,83 @@
+.main1-bg{
+    background-color: aqua;
+}
+
+.card-img{
+    max-width: 416px;
+    max-height: 200px;
+    object-fit: cover;
+
+    @media (max-width: 576px) {
+        max-width: 100%;
+    }
+}
+
+.card-btn{
+    width: auto;
+    border: 1px solid #000000;
+    padding: 8px 16px;
+    border-radius: 40px;
+}
+
+.br-40{
+    border-radius: 40px;
+}
+
+
+/* 顏色 */
+    .card-time-col{
+        color: #000000;
+    }
+
+    .card-tag-col{
+        color: #0027D5;
+    }
+
+    .card-tag-col2{
+        color: #ffffff;
+    }
+
+    .card-tag-bg-col{
+        background-color: #0027D5;
+    }
+
+
+    .card-title-col{
+        color: #000000;
+    }
+
+    .card-text-col{
+        color: #4B4B4B;
+    }
+
+    .card-btn-col{
+        color: #4B4B4B;
+    }
+/* 顏色 */
+
+/* 字體 */
+    .fontFamily{
+        font-family: 'Noto Sans TC', sans-serif;
+    }
+    .fw-500{
+        font-weight: 500;
+    }
+
+    .fw-700{
+        font-weight: 700;
+    }
+/* 字體 */
+
+.card-text{
+    /* width: 416px;
+    height: 48px; */
+
+    display: -webkit-box; /*-webkit-box + -webkit-box-orient 搭配 line-clamp 使用，讓文字可被裁切*/
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* 限制文字最多顯示幾行（這裡設為 2） */
+    
+
+    overflow: hidden; /*隱藏超出範圍的文字*/
+    text-overflow: ellipsis; /*加上「...」效果*/
+    /*line-height: 1.5;*/ /* 48px 高度 ÷ 2 行 = 24px 單行高度 */
+}
