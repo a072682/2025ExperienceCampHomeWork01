@@ -132,11 +132,11 @@ function App() {
       <div className="container my-4">
         <div className="row">
           {cards.map(card => (
-            <div key={card.id} className="col-12 col-sm-6 col-md-4 my-40">
+            <div key={card.id} className="col-12 col-md-6 col-xl-4 my-40">
               <div className="card border-0 h-100">
                 <picture>
                   {/* 小於 576px 時使用 mobile 圖片 */}
-                  <source media="(max-width: 575.98px)" srcSet={card.mobileImage} />
+                  <source media="(max-width: 767.98px)" srcSet={card.mobileImage} />
                   {/* 預設使用桌面圖片 */}
                   <img
                     src={card.image}
